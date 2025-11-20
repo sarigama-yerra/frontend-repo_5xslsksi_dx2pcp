@@ -1,4 +1,7 @@
+import { useState } from 'react'
 import { Users, PhoneCall, Share2, Mail, Rocket, Bot } from 'lucide-react'
+import ServiceShowcase from './ServiceShowcase'
+import { getShowcaseFor } from './useServiceShowcaseData'
 
 const services = [
   {
@@ -34,6 +37,14 @@ const services = [
 ]
 
 function Services() {
+  const [open, setOpen] = useState(false)
+  const [active, setActive] = useState(null)
+
+  const onTileClick = (title) => {
+    setActive(getShowcaseFor(title))
+    setOpen(true)
+  }
+
   return (
     <section id="services" className="relative py-20">
       <div className="absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_top,rgba(99,102,241,0.15),transparent_60%)]" />
@@ -45,16 +56,22 @@ function Services() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
-            <div key={s.title} className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition">
+            <button
+              key={s.title}
+              onClick={() => onTileClick(s.title)}
+              className="group text-left rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-amber-500 text-white shadow-lg">
                 <s.icon className="h-6 w-6" />
               </div>
               <h3 className="mt-5 text-xl font-semibold text-white">{s.title}</h3>
               <p className="mt-2 text-white/70 text-sm">{s.desc}</p>
-            </div>
+            </button>
           ))}
         </div>
       </div>
+
+      <ServiceShowcase open={open} onClose={() => setOpen(false)} service={active} />
     </section>
   )
 }
