@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import Solutions from './components/Solutions'
+import About from './components/About'
 import CTA from './components/CTA'
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <main className="relative">
         <Hero />
         <Services />
+        <Solutions />
+        <About />
         <CTA />
       </main>
 
