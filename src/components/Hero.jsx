@@ -8,7 +8,7 @@ function Hero() {
       </div>
 
       {/* Gradient overlay for readability - pointer events disabled so Spline remains interactive */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(17,24,39,0.2),rgba(2,6,23,0.65)_50%,rgba(2,6,23,0.95))]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(241,245,249,0.05),rgba(2,6,23,0.45)_50%,rgba(2,6,23,0.75))]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 py-20 md:grid-cols-2">

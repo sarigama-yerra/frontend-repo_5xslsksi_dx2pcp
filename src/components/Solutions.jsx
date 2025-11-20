@@ -1,7 +1,7 @@
 function Solutions() {
   return (
     <section id="solutions" className="relative py-20">
-      <div className="absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_top,rgba(56,189,248,0.12),transparent_60%)]" />
+      <div className="absolute inset-0 -z-0 bg-[radial-gradient(1100px_550px_at_20%_0%,rgba(56,189,248,0.12),transparent_60%),radial-gradient(900px_500px_at_80%_10%,rgba(168,85,247,0.12),transparent_60%)]" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">Solutions we deliver</h2>

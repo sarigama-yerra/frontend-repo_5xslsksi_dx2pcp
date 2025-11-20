@@ -45,7 +45,7 @@ function CTA() {
   return (
     <section id="contact" className="py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/20 to-amber-500/20 p-8 sm:p-12 backdrop-blur">
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-sky-400/15 via-fuchsia-400/15 to-amber-300/10 p-8 sm:p-12 backdrop-blur">
           <div className="grid items-center gap-8 md:grid-cols-2">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-white">Ready to automate growth?</h3>

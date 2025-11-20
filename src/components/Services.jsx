@@ -47,7 +47,7 @@ function Services() {
 
   return (
     <section id="services" className="relative py-20">
-      <div className="absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_top,rgba(99,102,241,0.15),transparent_60%)]" />
+      <div className="absolute inset-0 -z-0 bg-[radial-gradient(1200px_600px_at_10%_0%,rgba(125,211,252,0.12),transparent_60%),radial-gradient(900px_500px_at_90%_10%,rgba(216,180,254,0.12),transparent_60%)]" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">What we do</h2>
